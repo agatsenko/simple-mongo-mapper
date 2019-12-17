@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.+'
+    compileOnly 'org.projectlombok:lombok:1.18.+'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.+'
+    testCompileOnly 'org.projectlombok:lombok:1.18.+'
+
+    implementation 'com.google.guava:guava:28.0-jre'
+    implementation 'org.mongodb:mongodb-driver-sync:3.12.0'
+
+    testImplementation 'junit:junit:4.12'
+}
